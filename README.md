@@ -15,7 +15,6 @@ Use the batch or bash file to compile. You need to change the project name insid
 6. Batch or Bash files uses 20 threads for compiling source code. Increase or decrease that as you wish (-j 20)
 
 ## This Version: 
-Here's the revised version:
 
 I have made some changes to the file structure. Now, your project files should be placed inside the '/src' folder instead of the root directory. In my opinion, project files shouldn't be located directly in the root.
 
