@@ -2,7 +2,7 @@
 This project implements a basic hello world using Mbed OS Community Edition.  Use it as an example or a starting place for your own projects!
 Use the batch or bash file to compile. You need to change the project name inside the CMakeList.txt file. Under /src you can put your project files.
 
-## How to set up this project:
+## To set up this project, follow these steps:
 
 1. Clone it to your machine.  Don't forget to use `--recursive` to clone the submodules: `git clone --recursive https://github.com/MariwanJ/mbed-ce-hello-world `
 2. You may want to update the mbed-os submodule to the latest version, with `cd mbed-os && git pull origin master`
@@ -15,10 +15,13 @@ Use the batch or bash file to compile. You need to change the project name insid
 6. Batch or Bash files uses 20 threads for compiling source code. Increase or decrease that as you wish (-j 20)
 
 ## This Version: 
-I made some changes in the structure of the files. i.e. your project files should be inside the folder /src. IMHO project files shouldn't be in the root of the project.
-I also added a pdf that will let you configure Eclipse to compile, debug your project. Using OpenOCD, your bin will be uploaded automatically when you debug. 
-Otherwise, you can just copy the bin file into the virtual Nucleo flash memory that will install the bin inside the Nucleo module. Or you can use stm32 utility to upload the project.
-I don't have other boards, or other modules. You might update this readme and contribute with this version to make it more general.
+Here's the revised version:
+
+I have made some changes to the file structure. Now, your project files should be placed inside the '/src' folder instead of the root directory. In my opinion, project files shouldn't be located directly in the root.
+
+Additionally, I have included a PDF document that provides instructions for configuring Eclipse to compile and debug your project. By using OpenOCD, the binary file will be automatically uploaded when you start debugging. Alternatively, you can manually copy the bin file into the virtual Nucleo flash memory, which will install the binary inside the Nucleo module. Another option is to use the stm32 utility to upload the project.
+
+Please note that I don't have access to other boards or modules. Feel free to update this readme and contribute to this version in order to make it more general.
 
 Mbed studio, or Visual studio code, IMHO, is not a proper IDE for debugging mbed projects. Feel free to contribute to this copy or the original. 
 
