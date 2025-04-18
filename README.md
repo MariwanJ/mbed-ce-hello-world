@@ -3,7 +3,7 @@ This project implements a basic hello world using Mbed OS Community Edition.  Us
 Use the batch or bash file to compile. You need to change the project name inside the CMakeList.txt file. Under /src you can put your project files.
 
 # Some new changes due to changes in the mbed-os ce tools: 
-I needed to update this version since there are some changes in the official version made my version outdated. Now it should work as it should. 
+I needed to update this version since there are some changes in the official version made my version outdated. Now it should work as it before. 
 Notice that I have not selected the UPLOAD_METHOD_DEFAULT. Please refere to the comments in the CMakeLists.txt.  Mariwan 2025-04-18
 
 ## To set up this project, follow these steps:
