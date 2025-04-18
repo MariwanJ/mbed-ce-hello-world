@@ -10,14 +10,19 @@ set(PROJECT_NAME  "HelloWorld")
 cmake_minimum_required(VERSION 3.19)
 cmake_policy(VERSION 3.19)
 
+#This is required and must be changed depending on what you are using 
+#Read about this option : https://github.com/mbed-ce/mbed-os/wiki/Upload-Methods
+#set(UPLOAD_METHOD_DEFAULT "stlink") #this is only an example 
+#set(STLINK_PATH "YOUR_PATH")
+set(UPLOAD_METHOD_DEFAULT NONE)    #This line must be defined even if you don't use any upload method. Change this to your favorite option. 
+
+
 # Initialize Mbed OS build system. 
 # Note: This block must be before the project() call.
 #### Initialize Mbed OS build system. ####
 ######################################################################################################
 ### Block of including .json5 files. Files of this block must be included before the app.cmake
 
-#[[ Set path of mbed_app.json (necessary at all times) ]]
-set(MBED_APP_JSON_PATH mbed_app.json5)
 
 ###--------------------------------------------------------------------------------------------------- 
 #[[ This part is dedicated for custom targets only! The settings below activate targets from
@@ -25,6 +30,10 @@ set(MBED_APP_JSON_PATH mbed_app.json5)
 
 #[[ Here set path for custom_targets.json5 (this is our default) ]]
 #set(CUSTOM_TARGETS_JSON_PATH custom_targets/custom_targets.json5)
+
+#[[ Set path of mbed_app.json (necessary at all times) ]]
+set(MBED_APP_JSON_PATH mbed_app.json5)
+
 
 #[[ Here you can set path for custom upload config .cmake (optional example) ]]
 #set(CUSTOM_UPLOAD_CFG_PATH ${CMAKE_SOURCE_DIR}/${MBED_TARGET}/${MBED_TARGET}.cmake)
